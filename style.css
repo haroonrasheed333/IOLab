@@ -28,7 +28,7 @@ p												    {}
 span												{}
 hr													{}
 label												{color:#476b94;display:block;font-weight:bold;margin:0 0 5px 0;}
-input[type=text]									{border:1px solid #ccc;color:#666;font-family:helvetica,arial,sans-serif;font-size:1em;height:24px;padding:3px 5px;}
+input[type=text]									{border:1px solid #ccc;color:#666;font-family:helvetica,arial,sans-serif;font-size:1em;height:16px;margin:0 10px 0 0;padding:3px 5px;width:130px;}
 input[type=text]:focus								{background:#e7f3f7;}
 input[type=submit]									{background:#476b94;border:0;color:#fff;font-family:helvetica,arial,sans-serif;font-weight:bold;height:24px;padding:3px 10px;text-transform:uppercase;}
 
@@ -56,11 +56,14 @@ input[type=submit]									{background:#476b94;border:0;color:#fff;font-family:h
 #trails .step-2,
 #trails .step-3										{display:none;}
 
+#trails .step-1										{font-size:1.125em;}
+
+#trails .step-2										{font-size:1em;}
 #trails .step-2 a:link,
 #trails .step-2 a:visited							{color:#a477b4;}
 #trails .step-2 a:hover								{background:#a477b4;color:#fff;}
 
-#trails .step-3										{margin-right:0;}
+#trails .step-3										{font-size:.875em;margin-right:0;}
 #trails .step-3 a:link,
 #trails .step-3 a:visited							{color:#cebbd5;}
 #trails .step-3 a:hover								{background:#cebbd5;color:#fff;}

@@ -10,7 +10,8 @@ function getFeed(username) {
     var userData = [];
     
     // get the feed (requires that you use '?callback=?' because it is done using JSONP)
-    $.getJSON('http://feeds.delicious.com/v2/json/' + username + '?callback=?', function(json) {
+    // IMPORTANT: include "count=", otherwise it defaults to 10 
+    $.getJSON('http://feeds.delicious.com/v2/json/' + username + '?count=100&callback=?', function(json) {
     	
     	// show "loading" message
     	$("#loader").show();
@@ -104,10 +105,10 @@ function getFeed(username) {
     
     }).success(function() { 
     	$("#loader").hide();
-    	$("#trails h2").fadeIn(function() {
-	    	$("#trails .step-1").fadeIn(function() {
-		    	$("#trails .step-2").fadeIn(function() {
-			    	$("#trails .step-3").fadeIn(1000);
+    	$("#trails h2").fadeIn(250, function() {
+	    	$("#trails .step-1").fadeIn(250, function() {
+		    	$("#trails .step-2").fadeIn(250, function() {
+			    	$("#trails .step-3").fadeIn(250);
 		    	});
 	    	});
     	});
@@ -125,5 +126,5 @@ $(document).ready(function() {
     	getFeed(username);
     	return false;
     });    
-    $("#form-delicious").submit();
+    //$("#form-delicious").submit();
 });
