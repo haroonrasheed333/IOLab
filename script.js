@@ -67,21 +67,12 @@ function getFeed(username) {
     		var trailID = 'trail' + b;
     	    var trailTitle = '<div class="trail"><h2>' + trailList[b].replace('trail:','').replace('_',' ') + '</h2><div id="' + trailID + '"><ul class="step-1"></ul><ul class="step-2"></ul><ul class="step-3"></ul>';    	    
     		$('#trails').append(trailTitle);
-    		    		
-/*
-    	    var element1 = document.createElement("br");
-    	    document.body.appendChild(element1);
-    	    var element = document.createElement("h3");
-    	    var tr = trailList[b];
-    	    element.appendChild(document.createTextNode(tr.toUpperCase()));
-    	    document.body.appendChild(element);
-*/   
-			// populate each trail: section
+
+    		// populate each trail: section
     	    for (var c = 0; c < userData.length; c++) {
     	    	for (var d = 0; d < userData[c].t.length; d++) {
     	    		if (trailList[b] == userData[c].t[d]) {
 	    	    		var stepHTML = '<li><a target="_blank" href="' + userData[c].u + '">' + userData[c].d + '</a></li>';	    	    		
-/* 	    	    		var stepHTML = '<li><a href="' + userData[c].u + '">' + userData[c].d + "  |  " + userData[c].t +'</a></li>';	    	    		 */
 	    	    		if ($.inArray("step:1", userData[c].t) > -1) {
 		    	    		$('#' + trailID + " .step-1").append(stepHTML);
 	    	    		} else if ($.inArray("step:2", userData[c].t) > -1) {
@@ -90,12 +81,6 @@ function getFeed(username) {
 		    	    		$('#' + trailID + " .step-3").append(stepHTML);
 	    	    		};
 
-/*
-    	    			$('<li></li>').html(stepHTML)
-    	    			.data('extended', userData[c].n)
-    	    			.data('tags', userData[c].t)
-    	    			.appendTo('#' + trailID);
-*/
     	    		}
     	    	}
     	    }
@@ -122,11 +107,12 @@ function getFeed(username) {
 //--------------------------------------------------------------------------------------------------------------
 
 $(document).ready(function() {
+
     $("#form-delicious").on("submit", function(username) {
     	$("#trails").html("");
     	var username = $("#form-delicious-username").val();
     	getFeed(username);
     	return false;
     });    
-    //$("#form-delicious").submit();
+
 });
