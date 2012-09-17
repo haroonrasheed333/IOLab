@@ -32,20 +32,21 @@ function getFeed(username) {
     		
     	});
 
-		// populate tagList[]    	
+        // taglist2 is an one dimensional array with all the tags of an user
     	for (var i = 0; i < tagList1.length; i++){
     	    for (var j = 0; j < tagList1[i].length; j++){
     	        tagList2.push(tagList1[i][j]);
     	    }
     	}
 
-		// populate tagListDup[]    	
+    	// trailListDup is an array with all the trails of an user
     	for (var z = 0; z < tagList2.length; z++) {
     	    if (tagList2[z].slice(0,6)=='trail:') {
     	        trailListDup.push(tagList2[z]);
     	    }
     	}
 
+        //remove the duplicate entries from trailListDup   
     	var x, 
     	len = trailListDup.length, 
     	trailList = [], 
