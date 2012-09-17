@@ -122,6 +122,7 @@ function getFeed(username) {
 
 $(document).ready(function() {
     $("#form-delicious").on("submit", function(username) {
+    	$("#trails").html("");
     	var username = $("#form-delicious-username").val();
     	getFeed(username);
     	return false;
