@@ -172,7 +172,6 @@ function getFeed(username) {
     	};
 
     	// calculate the left margin for the last chunk of list items (for carousel)
-    	// CHANGE THE COUNT!!!!!!!!!!!
     	stepGroupCount = $(".trail-steps-group").length;
     	stepGroupWidth = $(".trail-steps-group").width();
     	lastStepGroupMargin = ((stepGroupCount * stepGroupWidth) / $(".trail").length - stepGroupWidth) * -1 + "px";
