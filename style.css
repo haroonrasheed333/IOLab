@@ -18,8 +18,8 @@ a:visited:hover									    {background:#6e2986;color:#fff;text-decoration:none;
 table td										    {}
 
 h1												    {font-size:2em;font-weight:bold;margin:0 0 30px 0;}
-h2												    {color:#53166a;font-size:1.25em;float:left;font-weight:bold;margin:0 20px 0 0;text-transform:uppercase;width:220px;}
-h3												    {}
+h2												    {color:#333;font-family: 'Crete Round',serif;font-size:1.25em;display:block;float:left;text-transform:uppercase;letter-spacing:4px;}
+h3												    {color:#53166a;font-size:1.25em;float:left;font-weight:bold;margin:0 20px 0 0;text-transform:uppercase;width:220px;}
 h4												    {}
 h5												    {}
 h6												    {}
@@ -47,26 +47,86 @@ input[type=submit]									{background:#476b94;border:0;color:#fff;font-family:h
 #form-delicious										{overflow:hidden;margin:0 0 30px 0;}
 #form-delicious input								{float:left;}
 
+#trails-title										{border-top:5px solid #666;overflow:hidden;padding:10px 0 12px 0;width:940px;}
+#trails-title h2									{display:block;float:left;margin:0 20px 0 0;width:220px;}
+#trails-title h2.last								{margin:0;}
+
 #trails												{border-top:1px dotted #ccc;overflow:hidden;padding:30px 0 0 0;}
+#trails h2											{display:block;float:left;margin:0 20px 0 0;font-family:helvetica,arial,sans-serif;font-weight:bold;letter-spacing:0;width:220px;}
 #trails ul											{display:block;float:left;margin:0 20px 0 0;width:220px;}
 #trails li											{margin:0 0 10px 0;}
-#trails .trail										{clear:both;margin:0 0 30px 0;overflow:hidden;}
+#trails .trail										{clear:both;margin:0 0 50px 0;overflow:hidden;}
+
+#trails .trail-steps								{height:150px;;overflow:hidden;position:relative;width:700px;}
+#trails .trail-steps-group							{float:left;margin:0;width:700px;}
+#trails .trail-steps-group-container				{position:absolute;left:0;top:0;}
+
+#trails-nav-prev,
+#trails-nav-next									{color:#6E2986;display:none;font-size:4em;position:absolute;}
+
+#trails-nav-prev:link,
+#trails-nav-prev:visited							{left:3%;top:45%;}
+#trails-nav-prev:hover								{background:none;color:#8a5e99;}
+
+#trails-nav-next:link,
+#trails-nav-next:visited							{right:3%;top:45%;}
+#trails-nav-next:hover								{background:none;color:#8a5e99;}
+
 #trails h2,
-#trails .step-1,
-#trails .step-2,
-#trails .step-3										{display:none;}
+#trails .step										{display:none;}
+#trails a:hover										{color:#fff !important;}
 
-#trails .step-1										{font-size:1.125em;}
+#trails .step-1										{font-size:1.5em;}
+#trails .step-1 a:link,
+#trails .step-1 a:visited							{color:#6e2986;}
+#trails .step-1 a:hover								{background:#6e2986;}
 
-#trails .step-2										{font-size:1em;}
+#trails .step-2										{font-size:1.4em;}
 #trails .step-2 a:link,
-#trails .step-2 a:visited							{color:#a477b4;}
-#trails .step-2 a:hover								{background:#a477b4;color:#fff;}
+#trails .step-2 a:visited							{color:#7b3693;}
+#trails .step-2 a:hover								{background:#7b3693;}
 
-#trails .step-3										{font-size:.875em;margin-right:0;}
+#trails .step-3										{font-size:1.3em}
 #trails .step-3 a:link,
-#trails .step-3 a:visited							{color:#cebbd5;}
-#trails .step-3 a:hover								{background:#cebbd5;color:#fff;}
+#trails .step-3 a:visited							{color:#8843a0;}
+#trails .step-3 a:hover								{background:#8843a0;}
+
+#trails .step-4										{font-size:1.2em;}
+#trails .step-4 a:link,
+#trails .step-4 a:visited							{color:#934faa;}
+#trails .step-4 a:hover								{background:#934faa;}
+
+#trails .step-5										{font-size:1.1em;}
+#trails .step-5 a:link,
+#trails .step-5 a:visited							{color:#9e5fb4;}
+#trails .step-5 a:hover								{background:#9e5fb4;}
+
+#trails .step-6										{font-size:1.0em;}
+#trails .step-6 a:link,
+#trails .step-6 a:visited							{color:#ab71bf;}
+#trails .step-6 a:hover								{background:#ab71bf;}
+
+#trails .step-7										{font-size:.95em;}
+#trails .step-7 a:link,
+#trails .step-7 a:visited							{color:#b784c9;}
+#trails .step-7 a:hover								{background:#b784c9;}
+
+#trails .step-8										{font-size:.9em;}
+#trails .step-8 a:link,
+#trails .step-8 a:visited							{color:#c59bd4;}
+#trails .step-8 a:hover								{background:#c59bd4;}
+
+#trails .step-9										{font-size:.85em;}
+#trails .step-9 a:link,
+#trails .step-9 a:visited							{color:#d4b2e0;}
+#trails .step-9 a:hover								{background:#d4b2e0;}
+
+#trails .step-10									{font-size:.8em;}
+#trails .step-10 a:link,
+#trails .step-10 a:visited							{color:#dfcde6;}
+#trails .step-10 a:hover							{background:#dfcde6;}
+
+#trails .step-last									{margin:0;}
 
 
 

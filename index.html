@@ -4,6 +4,7 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="jquery-1.8.1.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
@@ -15,12 +16,23 @@
 		<form id="form-delicious">
 			<label for="form-delicious-username">Enter the delicious username:</label>
 			<input type="text" id="form-delicious-username" name="form-delicious-username" value="raymonst" />
+			<!-- username to test: "raymonst" (3 steps) & "haroonrasheed" (10 steps) -->
 			<input type="submit" id="form-delicious-submit" value="Submit" />
 		</form>
 		<div id="loader">Loading&hellip;</div>
 		<ul id="bookmarks"></ul>
-		<div id="trails"></div>
+			<div id="trails-title">
+				<h2>trail name</h2>	
+				<h2 id="trails-title-1">step 1</h2>	
+				<h2 id="trails-title-2">step 2</h2>	
+				<h2 id="trails-title-3" class="last">step 3</h2>	
+			</div>
+		<div id="trails">
+		</div>
 	</div>
+	
+	<a href="#" id="trails-nav-prev">&larr;</a>
+	<a href="#" id="trails-nav-next">&rarr;</a>
 
 </body>
 </html>
