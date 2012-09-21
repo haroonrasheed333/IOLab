@@ -31,6 +31,7 @@ label												{color:#476b94;display:block;font-weight:bold;margin:0 0 5px 0;
 input[type=text]									{border:1px solid #ccc;color:#666;font-family:helvetica,arial,sans-serif;font-size:1em;height:16px;margin:0 10px 0 0;padding:3px 5px;width:130px;}
 input[type=text]:focus								{background:#e7f3f7;}
 input[type=submit]									{background:#476b94;border:0;color:#fff;font-family:helvetica,arial,sans-serif;font-weight:bold;height:24px;padding:3px 10px;text-transform:uppercase;}
+iframe												{border:1px solid #ccc;height:200px;margin:0 0 10px 0;width:938px;}
 
 ::selection 										{background:#41cbf4; /* Safari */}
 ::-moz-selection 									{background:#41cbf4; /* Firefox */}
@@ -39,7 +40,7 @@ input[type=submit]									{background:#476b94;border:0;color:#fff;font-family:h
 
 /* container */
 
-#container											{background:#fff;border-bottom:10px solid #cfd9e4;font-size:.875em;margin:0 auto 50px;padding:50px 40px;width:940px;}
+#container											{background:#fff;border-bottom:10px solid #cfd9e4;font-size:.875em;margin:0 auto 100px;padding:50px 40px;width:940px;}
 #bookmarks											{display:none;}
 
 #loader												{display:none;}
@@ -62,14 +63,14 @@ input[type=submit]									{background:#476b94;border:0;color:#fff;font-family:h
 #trails .trail-steps-group-container				{position:absolute;left:0;top:0;}
 
 #trails-nav-prev,
-#trails-nav-next									{color:#6E2986;display:none;font-size:4em;position:absolute;}
+#trails-nav-next									{color:#6E2986;display:none;font-size:4em;position:fixed;}
 
 #trails-nav-prev:link,
-#trails-nav-prev:visited							{left:3%;top:45%;}
+#trails-nav-prev:visited							{left:3%;top:68%;}
 #trails-nav-prev:hover								{background:none;color:#8a5e99;}
 
 #trails-nav-next:link,
-#trails-nav-next:visited							{right:3%;top:45%;}
+#trails-nav-next:visited							{right:3%;top:68%;}
 #trails-nav-next:hover								{background:none;color:#8a5e99;}
 
 #trails h2,
